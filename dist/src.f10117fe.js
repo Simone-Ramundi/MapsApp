@@ -134,6 +134,15 @@ var CustomMap = /** @class */function () {
       }
     });
   }
+  CustomMap.prototype.addMarker = function (mappable) {
+    new google.maps.Marker({
+      map: this.googleMap,
+      position: {
+        lat: mappable.location.lat,
+        lng: mappable.location.lng
+      }
+    });
+  };
   return CustomMap;
 }();
 exports.CustomMap = CustomMap;
