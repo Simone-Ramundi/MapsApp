@@ -1,3 +1,6 @@
+import {User} from "./User";
+import {Company} from "./Company";
+
 export class CustomMap {
     private googleMap: google.maps.Map;
     constructor(divId: string) {
@@ -9,4 +12,5 @@ export class CustomMap {
             }
         });
     }
+
 }
