@@ -9,7 +9,7 @@ export class User {
         this.name = faker.person.firstName()
         this.location = {
             lat: faker.location.latitude(),
-            lng: faker.location.longitude()
+            lng: faker.location.longitude(),
         };
     }
 }
